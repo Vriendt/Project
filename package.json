@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@oaklean/profiler-jest-environment": "^0.1.7",
+    "jest": "^30.3.0"
+  },
+  "dependencies": {
+    "@oaklean/profiler": "^0.1.7",
+    "mersenne-twister": "^1.1.0"
+  }
+}

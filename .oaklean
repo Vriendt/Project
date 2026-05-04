@@ -1,0 +1,31 @@
+{
+	// Inherits configuration settings from another config file
+	"extends": ".oaklean.local",
+	"exportOptions": {
+		// Output directory for profiles and reports
+		"outDir": "profiles/",
+		// Timestamped historical reports
+		"outHistoryDir": "profiles_history/",
+		// Project source root
+		"rootDir": "./",
+		// Export .cpuprofile for external tools
+		"exportV8Profile": false,
+		// Export .oak file for the OakleanVSCode Extension
+		"exportReport": true,
+		// Export raw power sensor data (.mcollection files)
+		"exportSensorInterfaceData": false
+	},
+	"projectOptions": {
+		// A unique UUID used to identify this project within the (Oaklean) ecosystem
+		"identifier": "e9a88542-8819-43b3-85bb-255f23a72a88"
+	},
+	"runtimeOptions": {
+		"seeds": {},
+		"v8": {
+			"cpu": {
+				// Sample rate in µs (lower = higher detail/overhead)
+				"sampleInterval": 1
+			}
+		}
+	}
+}
