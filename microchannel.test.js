@@ -1,5 +1,7 @@
 const CPM = require('./artistoo/build/artistoo-cjs.js')
 
+const STEPS = 1000
+
 let config = {
   ndim: 2,
   field_size: [300, 15],
@@ -61,7 +63,15 @@ function buildChannel() {
   }))
 }
 
-test('Microchannel simulation runs without errors', () => {
+function runSim() {
   const sim = new CPM.Simulation(config, custommethods)
-  expect(() => sim.run()).not.toThrow()
+  sim.toggleRunning()
+  for (let i = 0; i < STEPS; i++) {
+    sim.step();
+  }
+  sim.toggleRunning()
+}
+
+test('Microchannel simulation runs without errors', () => {
+  expect(() => runSim()).not.toThrow()
 })
