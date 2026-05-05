@@ -1,6 +1,6 @@
 const CPM = require('./artistoo/build/artistoo-cjs.js')
 
-const STEPS = 1000
+const STEPS = 10000
 
 let config = {
   ndim: 2,
@@ -65,7 +65,6 @@ function buildChannel() {
 
 function runSim() {
   const sim = new CPM.Simulation(config, custommethods)
-  sim.toggleRunning()
   for (let i = 0; i < STEPS; i++) {
     sim.step();
   }

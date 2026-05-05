@@ -216,7 +216,6 @@ function killTCells(){
 
 
 function runSim() {
-	sim.toggleRunning()
   for (let i = 0; i < STEPS; i++) {
 	  sim.step();
   }

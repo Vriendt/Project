@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777968625525" clover="3.2.0">
-  <project timestamp="1777968625525" name="All files">
+<coverage generated="1777971161521" clover="3.2.0">
+  <project timestamp="1777971161521" name="All files">
     <metrics statements="3049" coveredstatements="579" conditionals="1423" coveredconditionals="232" methods="416" coveredmethods="95" elements="4888" coveredelements="906" complexity="0" loc="3049" ncloc="3049" packages="1" files="1" classes="1"/>
     <file name="artistoo-cjs.js" path="/Users/thijsvandegriendt/Documents/Master/GS/Project/artistoo/build/artistoo-cjs.js">
       <metrics statements="3049" coveredstatements="579" conditionals="1423" coveredconditionals="232" methods="416" coveredmethods="95"/>
